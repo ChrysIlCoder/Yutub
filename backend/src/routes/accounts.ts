@@ -73,8 +73,8 @@ router.post("/accounts/account/create", async (req, res) => {
           name: body.username,
           description: `This is ${body.username}'s channel`,
           subscribers_count: 0,
-          channel_banner: 'http://172.30.112.1:3000/assets/default_files/banner_default.svg',
-          channel_profile_pic: 'http://172.30.112.1:3000/assets/default_files/profile_pic_default.svg',
+          channel_banner: 'http://[your-ip]:3000/assets/default_files/banner_default.svg',
+          channel_profile_pic: 'http://[your-ip]:3000/assets/default_files/profile_pic_default.svg',
         },
         subscribed_to: []
       }

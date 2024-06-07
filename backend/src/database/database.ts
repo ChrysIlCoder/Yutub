@@ -18,9 +18,9 @@ export const accounts: IAccount[] = [
       description: "This is Micheal's channel",
       subscribers_count: 1,
       channel_banner:
-        "http://172.30.112.1:3000/assets/default_files/banner_default.svg",
+        "http://[your-ip]:3000/assets/default_files/banner_default.svg",
       channel_profile_pic:
-        "http://172.30.112.1:3000/assets/default_files/profile_pic_default.svg"
+        "http://[your-ip]:3000/assets/default_files/profile_pic_default.svg"
     },
   },
   {
@@ -38,9 +38,9 @@ export const accounts: IAccount[] = [
       description: "It's me. The final c̶o̶u̶n̶t̶d̶o̶w̶n boss.",
       subscribers_count: 1,
       channel_banner:
-        "http://172.30.112.1:3000/assets/default_files/banner_default.svg",
+        "http://[your-ip]:3000/assets/default_files/banner_default.svg",
       channel_profile_pic:
-        "http://172.30.112.1:3000/assets/default_files/profile_pic_default.svg"
+        "http://[your-ip]:3000/assets/default_files/profile_pic_default.svg"
     },
   },
 ];
@@ -51,8 +51,8 @@ export const videos: IVideo[] = [
     video_info: {
       title: "Never gonna give you up - Micheal",
       description: "This is my first video",
-      thumbnail_url: "http://172.30.112.1:3000/assets/videos/uploads/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f-thumbnail.jpg",
-      video_url: "http://172.30.112.1:3000/assets/videos/uploads/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f-video.mp4"
+      thumbnail_url: "http://[your-ip]:3000/assets/videos/uploads/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f-thumbnail.jpg",
+      video_url: "http://[your-ip]:3000/assets/videos/uploads/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f/2637637b-6df0-40b1-a5c0-1f03c7ef8c4f-video.mp4"
     },
     uuid: "2637637b-6df0-40b1-a5c0-1f03c7ef8c4f",
     channel: accounts[0].channel,
