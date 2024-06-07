@@ -1,0 +1,40 @@
+.video_card_horizontal_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  width: 27.5rem;
+  
+  &__thumbnail {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  &__video_info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    &__channel_name {
+      font-size: 16px;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &__stats {
+      display: flex;
+      gap: 4px;
+      opacity: 0.5;
+      font-size: 14px;
+    }
+  }
+}

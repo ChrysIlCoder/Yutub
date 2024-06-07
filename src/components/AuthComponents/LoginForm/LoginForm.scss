@@ -1,0 +1,14 @@
+@import '../../../constants/styles/colors';
+
+.login_page_form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__submit {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background: $butterfly_blue;
+    color: white;
+  }
+}

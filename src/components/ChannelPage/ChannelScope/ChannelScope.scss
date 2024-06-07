@@ -1,0 +1,45 @@
+@import '../../../constants/styles/colors';
+
+.channel_scope_container {
+  display: flex;
+  gap: 12px;
+
+  &__profile_pic {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__channel_name {
+      font-size: 18px;
+    }
+
+    &__channel_sub_count {
+      color: gray;
+      font-size: 12px;
+    }
+
+    &__subscribe_button {
+      padding: 10px 20px;
+      background: red;
+      color: white;
+    }
+    &__subscribed_button {
+      padding: 10px 20px;
+      background: lightgray;
+      color: black;
+    }
+
+    &__settings_button {
+      padding: 10px 20px;
+      background: $butterfly_blue;
+      color: white;
+    }
+  }
+}

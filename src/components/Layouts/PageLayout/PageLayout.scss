@@ -1,0 +1,6 @@
+.page_layout_container {
+    display: grid;
+    //grid-template-columns: auto 3fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}

@@ -1,0 +1,15 @@
+.app_settings_container {
+  display: flex;
+  gap: 8px;
+
+  &__selector {
+    background: none;
+    border: none;
+    border-bottom: solid 1px black;
+  }
+
+  &__warning {
+    font-size: 0.7em;
+    opacity: 0.5;
+  }
+}

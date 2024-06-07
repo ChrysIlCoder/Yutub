@@ -1,0 +1,16 @@
+.channel_tabs_container {
+  display: flex;
+  gap: 8px;
+
+  &__tab_button {
+    background: none;
+    position: relative;
+    border-bottom: solid 2px transparent;
+    font-size: 16px;
+    color: gray;
+
+    &:hover {
+      border-bottom: solid 2px gray;
+    }
+  }
+}

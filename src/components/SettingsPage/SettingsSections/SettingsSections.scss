@@ -1,0 +1,22 @@
+.settings_section_container {
+  
+  &__title_container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__title {
+      font-size: 1.5em;
+    }
+
+    &__line {
+      width: 250px;
+      height: 1px;
+      background: black;
+    }
+  }
+
+  &__setting {
+    padding: 0.5rem;
+  }
+}

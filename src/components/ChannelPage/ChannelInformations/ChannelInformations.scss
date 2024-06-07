@@ -1,0 +1,11 @@
+.channel_informations_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__description_container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

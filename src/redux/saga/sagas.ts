@@ -1,0 +1,58 @@
+import { all } from "redux-saga/effects";
+import { accountsSaga } from "./accounts/sagas";
+import { videosSaga } from "./videos/sagas";
+import { commentsSaga } from "./comments/sagas";
+import { channelsSaga } from "./channels/sagas";
+
+interface ISAGAS_FLOW_NAMES {
+  POST_VIDEO: string;
+  GET_VIDEOS: string;
+  PUT_VIDEOS_VIEWS: string;
+  GET_VIDEO_BY_UUID: string;
+  DELETE_VIDEO_BY_UUID: string;
+
+  CREATE_NEW_COMMENT_WITH_VIDEO_UUID: string;
+  GET_COMMENTS_OF_VIDEO_UUID: string;
+  EDIT_COMMENT_BY_ID: string;
+  DELETE_COMMENT_BY_ID: string;
+
+  CREATE_NEW_ACCOUNT: string;
+  LOGIN_INTO_ACCOUNT: string;
+  GET_ACCOUNT_SUBSCRIPTIONS: string;
+
+  GET_CHANNEL_BY_ID: string;
+  SUBSCRIBE_TO_CHANNEL: string;
+  UNSUBSCRIBE_FROM_CHANNEL: string;
+  MODIFY_CHANNEL_INFO: string;
+}
+
+export const SAGAS_FLOW_NAMES: ISAGAS_FLOW_NAMES = {
+  POST_VIDEO: "POST_VIDEO",
+  GET_VIDEOS: "GET_VIDEOS",
+  PUT_VIDEOS_VIEWS: "PUT_VIDEOS_VIEWS",
+  GET_VIDEO_BY_UUID: "GET_VIDEO_BY_UUID",
+  DELETE_VIDEO_BY_UUID: "DELETE_VIDEO_BY_UUID",
+
+  CREATE_NEW_COMMENT_WITH_VIDEO_UUID: "CREATE_NEW_COMMENT_WITH_VIDEO_UUID",
+  GET_COMMENTS_OF_VIDEO_UUID: "GET_COMMENTS_OF_VIDEO_UUID",
+  EDIT_COMMENT_BY_ID: "EDIT_COMMENT_BY_ID",
+  DELETE_COMMENT_BY_ID: "DELETE_COMMENT_BY_ID",
+
+  CREATE_NEW_ACCOUNT: "CREATE_NEW_ACCOUNT",
+  LOGIN_INTO_ACCOUNT: "LOGIN_INTO_ACCOUNT",
+  GET_ACCOUNT_SUBSCRIPTIONS: "GET_ACCOUNT_SUBSCRIPTIONS",
+
+  GET_CHANNEL_BY_ID: "GET_CHANNEL_BY_ID",
+  SUBSCRIBE_TO_CHANNEL: "SUBSCRIBE_TO_CHANNEL",
+  UNSUBSCRIBE_FROM_CHANNEL: "UNSUBSCRIBE_FROM_CHANNEL",
+  MODIFY_CHANNEL_INFO: "MODIFY_CHANNEL_INFO",
+};
+
+export default function* rootSaga() {
+  yield all([
+    ...accountsSaga, 
+    ...videosSaga, 
+    ...commentsSaga, 
+    ...channelsSaga
+  ]);
+}

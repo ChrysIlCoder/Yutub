@@ -1,0 +1,10 @@
+export const COLORS = {
+    fun_blue: "#1a5eb1",
+    butterfly_blue: "#3ea6ff",
+    dark_jungle_green: "#222222",
+    thunder: "#303030",
+    pastel_grey: "#CCCCCC",
+    mercury: "#E5E5E5",
+    desert_storm: "#F8F8F8",
+    porcelian: "#F2F2F2",
+}

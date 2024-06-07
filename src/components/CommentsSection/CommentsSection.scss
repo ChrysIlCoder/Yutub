@@ -1,0 +1,54 @@
+@import "../../constants/styles/colors";
+
+.comments_section_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__form {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+
+    &__comment_field {
+      width: 100%;
+      
+      input {
+        border: none;
+        background: none;
+        border-bottom: 1px solid $mercury;
+        height: 100%;
+        padding: 5px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &__comment_submit {
+      padding: 10px 15px;
+      background: $butterfly_blue;
+      outline: solid 1px $butterfly_blue;
+      color: white;
+    }
+  }
+
+  &__comments_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__header {
+      font-size: 1.5em;
+    }
+
+    &__no_comments {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.7em;
+    }
+  }
+}

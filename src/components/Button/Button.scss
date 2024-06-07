@@ -1,0 +1,18 @@
+.button {
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: none;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+    &:active {
+        filter: brightness(0.85);
+    }
+
+    &__disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

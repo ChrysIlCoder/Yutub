@@ -1,0 +1,35 @@
+@import '../../constants/styles/colors';
+
+.input_field_container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+
+    &__input {
+        padding: 2px;
+        resize: none;
+        border: solid 1px lightgray;
+        border-radius: 0;
+
+        &[type='file'] {
+            border: none;
+        }
+
+        &:focus {
+            outline: solid 1px $fun_blue;
+            border: bottom;
+        }
+    }
+
+    &__error_container {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &__error {
+            color: red;
+            font-size: 12px;
+        }
+    }
+}

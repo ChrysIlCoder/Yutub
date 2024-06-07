@@ -1,0 +1,5 @@
+.channel_videos_grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 1rem;
+}

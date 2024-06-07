@@ -1,0 +1,34 @@
+@import '../../constants/styles/colors';
+
+.circle_button_container {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 2px;
+    position: relative;
+
+    &:hover {
+        background: $porcelian;
+    }
+
+    &:active {
+        background: $mercury;
+    }
+
+    &__label_tooltip {
+        position: absolute;
+        top: 110%;
+        background: black;
+        padding: 5px;
+        margin: 0 auto;
+        color: white;
+        opacity: 0.85;
+        width: fit-content;
+    }
+}

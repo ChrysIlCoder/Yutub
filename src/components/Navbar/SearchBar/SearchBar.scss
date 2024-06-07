@@ -1,0 +1,33 @@
+@import "../../../constants/styles/colors";
+
+.search_bar_container {
+  display: flex;
+  width: 100%;
+
+  &__input_search {
+    width: 100%;
+
+    input {
+      border: none;
+      outline: solid 1px $pastel_grey;
+      padding: 10px 15px;
+      width: 100%;
+      background: white;
+    }
+  }
+
+  &__input_submit {
+    border: none;
+    outline: solid 1px $pastel_grey;
+    padding: 0 20px;
+    cursor: pointer;
+    background: $desert_storm;
+
+    &:hover {
+      background: darken($color: $desert_storm, $amount: 3);
+    }
+    &:active {
+      background: darken($color: $desert_storm, $amount: 7);
+    }
+  }
+}
