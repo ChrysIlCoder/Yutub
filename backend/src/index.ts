@@ -27,5 +27,5 @@ app.use(comments_routers)
 app.use(channels_routers)
 
 export const port = 3000
-export const ip = '[your-ip]'
+export const ip = '172.30.112.1'
 app.listen(port, ip, () => console.log(`Server up and running on: http://${ip}:${port}`))

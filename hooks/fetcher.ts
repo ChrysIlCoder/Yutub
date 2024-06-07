@@ -11,7 +11,7 @@ export interface IApiRequest {
 export async function fetcher({ ...props }: IApiRequest): Promise<any> {
     const options: AxiosRequestConfig = {
         method: props.method,
-        baseURL: 'http://[your-ip]:3000',
+        baseURL: 'http://172.30.112.1:3000',
         url: props.url,
         headers: {
             "Content-Type": "application/json",
