@@ -27,7 +27,7 @@ Yutub it's a similar copy of [Youtube](https://youtube.com), with uploads, views
   - ```/accounts/login```: Logins the user through is account and the subsequent channel with his email and password
   - ```/accounts/account/create```: Creates an object of IAccount and adds its to the database
   - ```/accounts/:id/subscriptions```: Returns all the accounts channel subscribtions with an array
-> - Accounts endpoint
+> - Comments endpoint
   - ```/comments/of```: Returns an array of all the comments of a video with that id
   - ```/comments/new```: Adds a new comment to the video with that id
   - ```/comments/edit```: Edits the comment object with a new comment with that id
