@@ -11,23 +11,23 @@ Yutub it's a similar copy of [Youtube](https://youtube.com), with uploads, views
 
 ## API Endpoints
 
-> - Videos endpoint
+>  Videos endpoint
   - ```/videos/all```: Returns all the videos from the database as an array of objects
   - ```/videos/post```: Creates an object of IVideo and adds its to the database
   - ```/videos/add/views```: Adds a view to the video with that id
   - ```/videos/video```: Returns the video object with that id
-> - Channels endpoint
+>  Channels endpoint
   - ```/channel/:id```: Returns the channel object with that id
   - ```/channel/subscribe```: Subscribes to the channel with that id
   - ```/channel/unsubscribe```: Unsubscribes to the channel with that id
   - ```/channel/edit/name```: Edits the name of the channel with that id
   - ```/channel/edit/banner```: Edits the banner to the channel with that id
   - ```/channel/edit/profile_pic```: Edits the profile picture to the channel with that id
-> - Accounts endpoint
+>  Accounts endpoint
   - ```/accounts/login```: Logins the user through is account and the subsequent channel with his email and password
   - ```/accounts/account/create```: Creates an object of IAccount and adds its to the database
   - ```/accounts/:id/subscriptions```: Returns all the accounts channel subscribtions with an array
-> - Comments endpoint
+>  Comments endpoint
   - ```/comments/of```: Returns an array of all the comments of a video with that id
   - ```/comments/new```: Adds a new comment to the video with that id
   - ```/comments/edit```: Edits the comment object with a new comment with that id
